@@ -806,7 +806,7 @@ void MainWindow::setupSendToLatestGraphWindow()
             param.scale = sig->factor;
             param.startBit = sig->startBit;
             param.stride = 1;
-            param.graphName = sig->name;
+            param.graphName = msg->name + "." + sig->name;
             param.lineColor = QColor(QRandomGenerator::global()->bounded(160), QRandomGenerator::global()->bounded(160), QRandomGenerator::global()->bounded(160));
             param.lineWidth = 1;
             param.fillColor = QColor(128, 128, 128, 0);
